@@ -47,6 +47,7 @@ En soms moet er een pop up komen (of whatever; ergens moet er informatie komen, 
  
  <img src="images/IdeeOpdracht_generator.png" width="375px" alt="tarrot kaartgenerator">
  
+ Oh ja en! ik wil graag beestjes die geen functie hebben op random plaatsen op de kaart. 
 </details>
 
 
