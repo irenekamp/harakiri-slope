@@ -47,7 +47,7 @@ En soms moet er een pop up komen (of whatever; ergens moet er informatie komen, 
  
  <img src="images/IdeeOpdracht_generator.png" width="375px" alt="tarrot kaartgenerator">
  
- Oh ja en! ik wil graag beestjes of buitenaardsewezentjes die geen functie hebben op random plaatsen op de kaart (en als je er op klikt gebeuren er random dingen - zegt t "hoi" of wordt ie plat geslagen etc. Is dat te veel? Na ja, we zien wel waar we uitkomen...). 
+ Oh ja en! ik wil graag beestjes of buitenaardsewezentjes die geen functie hebben op random plaatsen op de kaart (en als je er op klikt gebeuren er specifieke dingen per beestje/buitenaardswezen - zegt t "hoi", gaat ie lachen, rent of vliegt (ik denk dat de meeste buitenaardsewezens niet kunnen rennnen) ie weg of ontploft ie etc. Is dat te veel? Na ja, we zien wel waar we uitkomen...). 
 </details>
 
 
