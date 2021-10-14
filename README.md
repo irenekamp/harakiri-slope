@@ -41,10 +41,11 @@ link naar de website die je gaat namaken óf de naam/omschrijving van je eigen o
  
 #### Screenshot(s) van de eerste pagina (small screen): 
 Een plattegrond ziet er ongeveer zo uit:
+ 
  <img src="images/IdeeOpdracht_plattegrond.jpeg" width="375px" alt="non-digitale plattegrond">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-En soms moet er een pop up komen (of whatever; ergens moet er informatie komen, ik zie wel waar) waar je meer informatie kunt lezen of zien (in een plaatje) en ik wil een spelletje: soort random generator met 4 verschillende items (en per item x-aantal opties), zoiets als hier https://bryangalera.com/tarot.php?c=ROzBGwKePwPyPutlzzzzp. 
+En soms moet er een pop up komen (of whatever; ergens moet er informatie komen, ik zie wel waar) waar je meer informatie kunt lezen of zien (in een plaatje) en ik wil een spelletje: soort random generator met 4 verschillende items (en per item x-aantal opties), zoiets als hier (maar dan mooier) https://bryangalera.com/tarot.php?c=ROzBGwKePwPyPutlzzzzp. 
  
  <img src="images/IdeeOpdracht_generator.png" width="375px" alt="tarrot kaartgenerator">
  
