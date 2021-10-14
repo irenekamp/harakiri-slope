@@ -37,13 +37,16 @@ Ik vond blingbling wel aardig klinken, dus ik denk surface (maar vind responsive
 ### Je opdracht:
 link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
+ Ok, dus, ik wil een soort plattegrond maken met informatie, plaatjes en spelletjes bij verschillende stations (mag dat?).
+ 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Een plattegrond ziet er ongeveer zo uit:
+ <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+En soms moet er een pop up komen (of whatever; ergens moet er informatie komen, ik zie wel waar) waar je meer informatie kunt lezen of zien (in een plaatje) en ik wil een spelletje: soort random generator met 4 verschillende items (en per item x-aantal opties). 
+ 
+ <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
