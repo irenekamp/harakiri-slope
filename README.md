@@ -35,9 +35,7 @@ Ik vond blingbling wel aardig klinken, dus ik denk surface (maar vind responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
- Ok, dus, ik wil een soort plattegrond maken met informatie, plaatjes en spelletjes bij verschillende stations (mag dat?).
+Ok, dus, ik wil een soort plattegrond maken met informatie, plaatjes en spelletjes bij verschillende stations (mag dat?).
  
 #### Screenshot(s) van de eerste pagina (small screen): 
 Een plattegrond ziet er ongeveer zo uit:
