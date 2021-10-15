@@ -46,6 +46,8 @@ De overzichtspagina zou eigenlijk een zonnestelsel moeten zijn of een kaart daar
 #### Screenshot(s) van de tweede pagina (small screen):
 De buitenaardsewezentjes komen in een detailpagina. Niet helemaal hoe het eruit moet zien, maar wel in een frame en bewegend (en met een led lichtje en veel bling): https://codepen.io/stix/full/KdJEwB
  
+ De beschrijving moet er ook nog bij. 
+ 
   <img src="images/IdeeOpdracht_detail.png" width="375px" alt="encyclopedie detailpagina">
 
 De wezentjes zelf komen in beeld "vliegen" (of op hun unieke manier natuurlijk "zappen" kan ook) zoiets: https://codepen.io/mariosmaselli/full/ghmwq
