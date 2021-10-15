@@ -35,19 +35,18 @@ Ik vond blingbling wel aardig klinken, dus ik denk surface (maar vind responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-Ok, dus, ik wil een soort plattegrond maken met informatie, plaatjes en spelletjes bij verschillende stations (mag dat?).
+Ik wil graag een encyclopedie van buitenaardsewezentjes maken (of de overzichtpagina daarvan en een detailpagina).
  
 #### Screenshot(s) van de eerste pagina (small screen): 
-Een plattegrond ziet er ongeveer zo uit:
+De overzichtspagina zou eigenlijk een zonnestelsel moeten zijn of een kaart daarvan, misschien zoiets: https://codepen.io/juliangarnier/pen/idhuG
  
- <img src="images/IdeeOpdracht_plattegrond.jpeg" width="375px" alt="non-digitale plattegrond">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-En soms moet er een pop up komen (of whatever; ergens moet er informatie komen, ik zie wel waar) waar je meer informatie kunt lezen of zien (in een plaatje) en ik wil een spelletje: soort random generator met 4 verschillende items (en per item x-aantal opties), zoiets als hier (maar dan mooier) https://bryangalera.com/tarot.php?c=ROzBGwKePwPyPutlzzzzp. 
+De buitenaardsewezentjes komen in een detailpagina. Niet helemaal hoe het eruit moet zien, maar wel in een frame en bewegend (en met een led lichtje en veel bling): https://codepen.io/stix/full/KdJEwB
  
- <img src="images/IdeeOpdracht_generator.png" width="375px" alt="tarrot kaartgenerator">
+De wezentjes zelf komen in beeld "vliegen" (of op hun unieke manier natuurlijk "zappen" kan ook) zoiets: https://codepen.io/mariosmaselli/full/ghmwq
  
- Oh ja en! ik wil graag beestjes of buitenaardsewezentjes die geen functie hebben op random plaatsen op de kaart (en als je er op klikt gebeuren er specifieke dingen per beestje/buitenaardswezen - zegt t "hoi", gaat ie lachen, rent of vliegt (ik denk dat de meeste buitenaardsewezens niet kunnen rennen) ie weg of ontploft ie etc. Is dat te veel? Na ja, we zien wel waar we uitkomen...). 
+ 
 </details>
 
 
