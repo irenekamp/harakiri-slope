@@ -39,13 +39,19 @@ Ik wil graag een encyclopedie van buitenaardsewezentjes maken (of de overzichtpa
  
 #### Screenshot(s) van de eerste pagina (small screen): 
 De overzichtspagina zou eigenlijk een zonnestelsel moeten zijn of een kaart daarvan, misschien zoiets: https://codepen.io/juliangarnier/pen/idhuG
- 
+
+ <img src="images/IdeeOpdracht_overzicht.png" width="375px" alt="encyclopedie overzicht">
+
 
 #### Screenshot(s) van de tweede pagina (small screen):
 De buitenaardsewezentjes komen in een detailpagina. Niet helemaal hoe het eruit moet zien, maar wel in een frame en bewegend (en met een led lichtje en veel bling): https://codepen.io/stix/full/KdJEwB
  
+  <img src="images/IdeeOpdracht_detail.png" width="375px" alt="encyclopedie detailpagina">
+
 De wezentjes zelf komen in beeld "vliegen" (of op hun unieke manier natuurlijk "zappen" kan ook) zoiets: https://codepen.io/mariosmaselli/full/ghmwq
  
+  <img src="images/IdeeOpdracht_wezens.png" width="375px" alt="encyclopedie wezens">
+
  
 </details>
 
