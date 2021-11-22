@@ -27,27 +27,24 @@ footer {
 
 ul {
     position: relative;
-    top:50vh;
-
-  
+    top:50vmin;
 
     display:flex;
     justify-content: center;
     align-items: center;
 
-    
     list-style: none;  
 }
 
 
 .zon {
     position: absolute;
-/*    top:calc((100% - 15em) /2); :/ werkt nog niet zoals gedacht... zon in midden van ul*/
-    
-    left:calc((100% - 15em) /2);
+/*    :/ werkt nog niet zoals gedacht... zon in midden van ul*/
+    top:calc((100% - 15vmin) /2); 
+    left:calc((100% - 15vmin) /2);
         
-    width: 15em;
-    height: 15em;
+    width: 15vmin;
+    height: 15vmin;
     
     border-radius: 50%;
     background-color: var(--zon-color);
@@ -60,13 +57,12 @@ ul {
     
     display:flex;
     justify-content: center;
-
     
-    top:calc((100% - 19em) /2);
-    left:calc((100% - 19em) /2);
+    top:calc((100% - 19vmin) /2);
+    left:calc((100% - 19vmin) /2);
     
-    width: 19em;
-    height: 19em;
+    width: 19vmin;
+    height: 19vmin;
     border: .5px transparent solid;
     margin: 0;
     padding: 0;
@@ -77,8 +73,8 @@ ul {
 
 /*bolletje voor planeet*/
 .mercurius__planeet {
-    height: 1em;
-    width: 1em;
+    height: 1vmin;
+    width: 1vmin;
        
     border-radius: 50%;
     background-color: blue;
@@ -90,21 +86,21 @@ ul {
     display:flex;
     justify-content: center;
     
-    top:calc((100% - 25em) /2);
-    left:calc((100% - 25em) /2);
+    top:calc((100% - 25vmin) /2);
+    left:calc((100% - 25vmin) /2);
     
-    width: 25em;
-    height: 25em;
+    width: 25vmin;
+    height: 25vmin;
     border: .5px transparent solid;
-    margin:0;
+    margin: 0;
     border-radius: 50%;
     
     animation: draaien 15s linear infinite;
 }
 
 .venus__planeet {
-    height: 2em;
-    width: 2em;
+    height: 2vmin;
+    width: 2vmin;
     
     border-radius: 50%;
     background-color: blue;
@@ -116,25 +112,26 @@ ul {
     display:flex;
     justify-content: center;
     
-    top:calc((100% - 31em) /2);
-    left:calc((100% - 31em) /2);
+    top:calc((100% - 31vmin) /2);
+    left:calc((100% - 31vmin) /2);
     
-    width: 31em;
-    height: 31em;
+    width: 31vmin;
+    height: 31vmin;
     border: .5px transparent solid;
-    margin:0;
+    margin: 0;
     border-radius: 50%;
     
     animation: draaien 10s linear infinite;
 }
 
 .aarde__planeet {
-    height: 2em;
-    width: 2em;
+    height: 2vmin;
+    width: 2vmin;
     
     border-radius: 50%;
     background-color: blue;
 }
+
 
 .mars {
     position: absolute;
@@ -142,21 +139,21 @@ ul {
     display:flex;
     justify-content: center;
     
-    top:calc((100% - 35em) /2);
-    left:calc((100% - 35em) /2);
+    top:calc((100% - 35vmin) /2);
+    left:calc((100% - 35vmin) /2);
     
-    width: 35em;
-    height: 35em;
+    width: 35vmin;
+    height: 35vmin;
     border: .5px transparent solid;
-    margin:0;
+    margin: 0;
     border-radius: 50%;
     
-    animation: draaien 10s linear infinite;
+    animation: draaien 1s linear infinite;
 }
 
 .mars__planeet {
-    height: 1em;
-    width: 1em;
+    height: 1vmin;
+    width: 1vmin;
     
     border-radius: 50%;
     background-color: blue;
@@ -169,20 +166,20 @@ ul {
     display:flex;
     justify-content: center;
     
-    top:calc((100% - 47em) /2);
-    left:calc((100% - 47em) /2);
+    top:calc((100% - 47vmin) /2);
+    left:calc((100% - 47vmin) /2);
     
-    width: 47em;
-    height: 47em;
+    width: 47vmin;
+    height: 47vmin;
     border: .5px transparent solid;
-    margin:0;
+    margin: 0;
     border-radius: 50%;
     
     animation: draaien 30s linear infinite;
 }
 .jupiter__planeet {
-    width:5em;
-    height:5em;
+    width:5vmin;
+    height:5vmin;
 
     border-radius: 50%;
     background-color: blue;
@@ -195,21 +192,21 @@ ul {
     display:flex;
     justify-content: center;
     
-    top:calc((100% - 59em) /2);
-    left:calc((100% - 59em) /2);
-    
-    width: 59em;
-    height: 59em;
+    top:calc((100% - 59vmin) /2);
+    left:calc((100% - 59vmin) /2);
+
+    width: 59vmin;
+    height: 59vmin;
     border: .5px transparent solid;
-    margin:0;
+    margin: 0;
     border-radius: 50%;
     
     animation: draaien 50s linear infinite;
 }
 
 .saturnus__planeet{
-    width:5em;
-    height:5em;
+    width:5vmin;
+    height:5vmin;
 
     border-radius: 50%;
     background-color: blue;
@@ -221,21 +218,21 @@ ul {
     display:flex;
     justify-content: center;
     
-    top:calc((100% - 67em) /2);
-    left:calc((100% - 67em) /2);
+    top:calc((100% - 67vmin) /2);
+    left:calc((100% - 67vmin) /2);
     
-    width: 67em;
-    height: 67em;
+    width: 67vmin;
+    height: 67vmin;
     border: .5px transparent solid;
-    margin:0;
+    margin: 0;
     border-radius: 50%;
     
     animation: draaien 90s linear infinite;
 }
 
 .uranus__planeet{
-    width:3em;
-    height:3em;
+    width:3vmin;
+    height:3vmin;
 
     border-radius: 50%;
     background-color: blue;
@@ -246,25 +243,26 @@ ul {
     display:flex;
     justify-content: center;
     
-    top:calc((100% - 75em) /2);
-    left:calc((100% - 75em) /2);
+    top:calc((100% - 75vmin) /2);
+    left:calc((100% - 75vmin) /2);
     
-    width: 75em;
-    height: 75em;
+    width: 75vmin;
+    height: 75vmin;
     border: .5px transparent solid;
-    margin:0;
+    margin: 0;
     border-radius: 50%;
     
     animation: draaien 9s linear infinite;
 }
 
 .neptunus__planeet {
-    width:3em;
-    height:3em;
+    width:3vmin;
+    height:3vmin;
 
     border-radius: 50%;
     background-color: blue;
 }
+
 
 
 @keyframes draaien {
