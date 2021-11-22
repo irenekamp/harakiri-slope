@@ -1,5 +1,127 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing: border-box;  
 }
 
+:root {
+  --zon-color: goldenrod;
+  --mercurius-color: blue;
+  --shadow-color: rgba(0 0 0 / .5);
+}
+
+body {
+    background-color: black;
+   }
+
+header {
+  color: white;
+  text-align: center;
+    
+}
+
+ul {
+    position: relative;
+    top:12em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;  
+}
+
+
+.zon {
+    position: absolute;
+/*    top:calc((100% - 15em) /2); :/ werkt nog niet zoals gedacht... zon in midden viewport*/
+    left:calc((100% - 15em) /2);
+        
+    width: 15em;
+    height: 15em;
+    
+    border-radius: 50%;
+    background-color: var(--zon-color);
+    background: radial-gradient(yellow, goldenrod); 
+}
+
+/*cirkel voor pad om zon*/
+.mercurius {
+    position: absolute;
+    top:calc((100% - 16em) /2);
+    left:calc((100% - 16em) /2);
+    
+    width: 16em;
+    height: 16em;
+    border: .5px transparent solid;
+    margin:0;
+    border-radius: 50%;
+    
+    animation: draaien 15s linear infinite;
+}
+
+/*bolletje voor planeet*/
+.mercurius__planeet {
+    height: 1em;
+    width: 1em;
+    
+    border-radius: 50%;
+    background-color: blue;
+    
+}
+
+/*
+.venus {
+    width:2em;
+    height:2em;
+    background-color:darkorange;
+    border-radius:50%;
+}
+
+.aarde {
+    width:2em;
+    height:2em;
+    background-color:darkorange;
+    border-radius:50%;
+}
+
+.mars {
+    width:1em;
+    height:1em;
+    background-color:darkorange;
+    border-radius:50%;
+}
+
+.jupiter {
+    width:5em;
+    height:5em;
+    background-color:darkorange;
+    border-radius:50%;
+}
+
+.saturnus {
+    width:5em;
+    height:5em;
+    background-color:darkorange;
+    border-radius:50%;
+}
+
+.uranus {
+    width:3em;
+    height:3em;
+    background-color:darkorange;
+    border-radius:50%;
+}
+
+.neptunus {
+    width:3em;
+    height:3em;
+    background-color:darkorange;
+    border-radius:50%;
+}
+*/
+
+@keyframes draaien {
+    100% {
+    transform: rotate(360deg);
+    }
+}
