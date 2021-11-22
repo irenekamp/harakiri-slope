@@ -31,7 +31,7 @@ Ik vond blingbling wel aardig klinken, dus ik denk surface (maar vind responsive
 
 ## Je website
 
-<details open>
+<details>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -63,17 +63,11 @@ De wezentjes zelf komen in beeld "vliegen" (of op hun unieke manier natuurlijk "
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### even draaien uitproberen: 
+https://codepen.io/ikamp/pen/wvqZeRr
 
 </details>
 
