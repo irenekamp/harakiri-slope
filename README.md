@@ -63,7 +63,7 @@ De wezentjes zelf komen in beeld "vliegen" (of op hun unieke manier natuurlijk "
 
 ## Breakdownschets (week 1)
 
-<details open>
+<details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### even draaien uitproberen: 
@@ -77,12 +77,11 @@ https://codepen.io/ikamp/pen/wvqZeRr
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+animatie uitproberen: https://codepen.io/ikamp/pen/jOGNbKW?editors=1100
 
 ### Agenda voor meeting
 samen met je groepje opstellen
