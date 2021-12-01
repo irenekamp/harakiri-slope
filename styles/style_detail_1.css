@@ -1,0 +1,442 @@
+*, *::after, *::before {
+  box-sizing: border-box;  
+}
+/* 1. hover koepel > klapt open, daarna pas animatie
+2. max. afmeting aan ruimteschip + rik zetten (min is ok)*/
+
+
+body {
+    background-color: black;
+    margin: 0;
+  }
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+
+    color: white;
+    text-align: left;
+    padding: 1em 1em;
+}
+h1 {
+  margin:0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vw;
+  grid-gap: 2em;
+  place-items: center;
+ 
+  /* overflow: hidden; */
+}
+/**********************************************
+Ruimtewezen 1
+***********************************************/
+
+article.ruimteschip {
+  place-self: center;
+  animation: zweven 2s ease-in-out infinite;
+  width: 25vw;
+  height: 25vw;
+  }
+ 
+article.ruimteschip:hover .koepel {
+  animation: opendicht 6s alternate-reverse infinite;
+  transform-origin: bottom left;
+}
+
+ .mannetje {
+   position: absolute;
+   
+   top: 3vw;
+   left: 10vw;
+   
+   width: 10vw;
+   height: 14vw;
+   border-radius: 4vw 4vw 0 0;
+   
+   background-color: green;
+   box-shadow: inset 1vw .4vw rgba(200, 150, 50, 0.3);
+ }
+ 
+ div[class^="oog1"]  {
+   width: 3vw;
+   height: 3vw;
+   border-radius: 50%;
+   background-color: white;
+   box-shadow: 0.02vw .4vw .2vw 0 rgba(0, 0, 0, .2);
+   animation: squint 12s linear infinite;
+ }
+ 
+ .oog1Links {
+   position: relative;
+   top: 2vw;
+   left: 2vw;
+ }
+ 
+ .oog1Rechts {
+   position: absolute;  
+   top: 2vw;
+   left: 5vw;
+ }
+ 
+ div[class^="pupil1"] {
+   width: 1vw;
+   height: 1vw;
+   border-radius: 50%;
+   
+   background-color: black;
+ }
+ 
+ .pupil1Links {
+   position: relative;
+   top: 1vw;
+   left: 1vw;
+ }
+ 
+ .pupil1Rechts {
+   position: relative;
+   top: 1vw;
+   left: 1vw;
+   
+ }
+ 
+ .mond1 {
+   position: relative;
+   
+   top: 4vw;
+   left: 4vw;
+   width: 2vw;
+   height: .6vw;
+   border-radius: 0 0 50% 50%;
+   
+   background-color: orangered;
+   box-shadow: 0.02vw .2vw .2vw 0 rgba(0, 0, 0, .2);
+   
+   animation: oh 12s linear infinite;
+ }
+ 
+ .onderkant {
+   position: absolute;
+   
+   top: 14vw;
+   width: 30vw;
+   height: 6vw;
+   border-radius: 10vw;
+   
+   background-color: silver;
+   box-shadow:
+     inset -.4vw -.2vw rgba(0, 0, 0, 0.4),
+     inset -1.2vw -.6vw rgba(0, 0, 0, 0.3);
+ }
+ 
+ .koepel {
+   position: absolute;
+   
+   top: 2vw;
+   left: 3vw;
+   
+   width: 24vw;
+   height: 12vw;
+   
+   border-radius: 11vw 11vw 0 0;
+   background-color: rgba(0, 200, 200, .3);
+   box-shadow: inset 1.6vw .6vw rgba(150, 150, 150, 0.2);
+ }
+ 
+ 
+ 
+ div[class^='licht']{
+   width: 2vw;
+   height: 2vw;
+   border-radius: 50%;
+   
+   background-color: goldenrod;
+   box-shadow: .3vw .3vw .2vw 0 rgba(0, 0, 0, .5);
+  }
+ 
+ .lichtEen {
+   position: relative;
+   top: 2vw;
+   left: 2vw;
+   animation: lichtAan 1s infinite;
+   animation-delay: -.2s;
+ }
+ 
+ .lichtTwee {
+   position: absolute;
+   top: 2vw;
+   left: 8vw;
+   animation: lichtAan 1s infinite;
+   
+ }
+ 
+ .lichtDrie {
+   position: absolute;
+   top: 2vw;
+   left: 14vw;
+   animation: lichtAan 1s infinite;
+   animation-delay: .2s;
+  
+ 
+ }
+ 
+ .lichtVier {
+   position: absolute;
+   top: 2vw;
+   left: 20vw;
+   animation: lichtAan 1s infinite;
+   animation-delay: .4s;
+  
+ }
+ 
+ .lichtVijf {
+   position: absolute;
+   top: 2vw;
+   left: 26vw;
+    animation: lichtAan 1s infinite;
+    animation-delay: .6s;
+ }
+ 
+ @keyframes zweven {
+   0%, 100% {
+     transform: translatey(0);
+   }
+   50%{
+     transform: translatey(1vw);
+   }
+ }
+ 
+ @keyframes lichtAan {
+   0%, 100% {
+   background-color: goldenrod;
+   }
+   
+   15%, 20% {
+     background-color: yellow;
+     box-shadow: 0 0 .4vw rgba(255, 255, 0, .5);
+ 
+    }
+  
+  }
+ 
+ @keyframes oh {
+   0%, 9%, 100% {
+    height: .6vw;
+   }
+   4% {
+    height: 2vw;
+       }
+ }
+ 
+ @keyframes squint {
+   0%, 15%, 100% {
+    height: 3vw;
+   }
+   5% {
+    height: 2.6vw;
+       }
+ }
+ 
+ /**********************************************
+Beschrijving
+ ***********************************************/
+
+ article.beschrijving {
+  place-self: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  padding: 2vw 2vw;
+ }
+ /**********************************************
+ Ruimtewezen 2
+ ***********************************************/
+ 
+ article.Rik {
+ place-self: center;
+ width: 25vw;
+ height: 25vw;
+ } 
+ 
+ article.Rik:hover {
+   filter:opacity(25%);
+   transform:translate(-50%) scale(0.1);
+   transition-duration:.3s;
+ }
+ 
+ section.hoofd2, section.body {
+     animation:trillen 1s infinite;
+ }
+ 
+ .hoofd2 {
+   position: absolute;
+ 
+   width: 25vw;
+   height: 15vw;
+   
+   border-radius: 12.5vw 12.5vw 0 0;
+   box-shadow:
+     inset -.75vw 0vw rgba(0, 0, 0, .2),
+     inset -2.5vw 0vw rgba(0, 0, 0, .3);
+   background-color: silver;
+ }
+ 
+ div[class^="oog2"]{
+   width: 5vw;
+   height: 5vw;
+   border-radius: 50%;
+   
+   background-color: white;
+ }
+ 
+ .oog2Links {
+   position:relative;
+   top: 9vw;
+   left: -2.5vw;
+   
+ }
+ 
+ .oog2Rechts {
+   position:absolute;
+   top: 9vw;
+   left: 22.5vw;
+ }
+ 
+ div[class^="pupil2"]{
+   width: 1.5vw;
+   height: 1.5vw;
+   border-radius: 50%;
+   
+   background-color: black;
+   animation: scanning 10s infinite;
+ }
+ 
+ .pupil2Links {
+   position:relative;
+   top: 1.75vw;
+ }
+ 
+ .pupil2Rechts {
+   position:relative;
+   top: 1.75vw;
+ }
+ 
+ .mond2 {
+   position:relative;
+   top: 8.5vw;
+   left: 11.25vw;
+   width: 2.5vw;
+   height: 1vw;
+   border-radius: 60% 60% 0 0;
+   
+   background-color: orangered;
+ }
+ .body {
+   position: relative;
+   top: 16vw;
+   width: 25vw;
+   height: 2.5vw;
+   
+   border-radius: 0 0 1vw 1vw;
+   background-color:silver;
+   box-shadow:
+     inset -.75vw 0vw rgba(0, 0, 0, .2),
+     inset -2.5vw 0vw rgba(0, 0, 0, .3);
+ }
+ 
+ div[class^="been2"] {
+   width: 5vw;
+   height: 3vw; 
+   border-radius: 0 0 .5vw .5vw;
+  
+   background-color:silver;
+   box-shadow:
+     inset -.75vw .5vw rgba(0, 0, 0, .2),
+     inset -2.5vw 1vw rgba(0, 0, 0, .3);
+ }
+ .been2Links {
+   position:relative;
+   top: 2.5vw;
+   left: 2.5vw;
+ }
+ .been2Rechts {
+   position:absolute;
+   top: 2.5vw;
+   left: 17.5vw;
+ }
+ 
+ div[class^="vlam"] {
+   width: 5vw;
+   height: 10vw;
+   border-radius: 0 0 60% 60%;
+ 
+   background: radial-gradient(orange, orangered);
+   
+   animation: altijdAan 3s linear infinite;
+ }
+ .vlamLinks {
+   position: relative;
+   top: 3.25vw;
+   left: 0;
+ }
+ 
+ .vlamRechts{
+   position: absolute;
+   top: 5.75vw;
+   left: 17.5vw;
+ }
+ @keyframes scanning {
+   0%, 15%, 50%, 80% {
+     transform: translatex(0) translatey(0);
+   }
+   10% {
+     transform: translatex(3.5vw);
+   }
+   55%, 70%{
+     transform: translatex(2.75vw) translatey(1.25vw);
+   }
+   60%{
+      transform: translatex(.5vw) translatey(-1vw);
+   }
+   65% {
+     transform: translatex(2.75vw) translatey(-1.25vw);
+   }
+   75% {
+     transform: translatex(.5vw) translatey(1vw);
+   }
+   100% {
+     transform: translatex(1.75vw) translatey(0);
+   }
+   
+ }
+ 
+ @keyframes trillen {
+   0%, 12%, 16%, 20%, 24%, 90%, 94%, 98%, 100%{
+     transform: translatex(0);
+   }
+   10%, 18%, 92%   {
+     transform: translatex(.5vw);
+   }
+  14%, 22%, 96%  {
+     transform: translatex(-.5vw);
+   }
+ }
+ 
+ @keyframes altijdAan {
+   0%, 100% {
+     filter: blur(2.5vw) opacity(20%);
+   }
+   51%, 54% {
+     filter: blur(1vw) opacity(75%);
+   }
+ }
+
+ @keyframes opendicht{
+  0% {
+    transform: rotatez(0deg);
+  }
+  100%{ 
+    transform: rotatez(-90deg);
+  }
+}

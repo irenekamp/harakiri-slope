@@ -5,26 +5,29 @@
 
 /*to do: 
 --issues--
-1. planeet bolletjes op orbit zetten (zodra animatie aangaat, negeren ze translatey)
-2. de plek van de zon :/ 
+1. planeet bolletjes op orbit zetten > zet de translate in de animatie (anders overschrijft ie translate)
+2. schaduw maak radial gradient en verschuif
 3. naam planeten: ipv ::before, misschien :hover > dan langzamer draaien?
 
 --nog niet aan toegekomen--
-4. schaduwen op planeten
-5. extra maantjes/ringen etc
-6. font + afbeeldingen "galaxy-feel"
-7. header/footer een mooi plekje geven
-8. link naar detailpagina over ruimtewezens per planeet
+4. header/footer een mooi plekje geven
+5. font + afbeeldingen "galaxy-feel"
+6. link naar detailpagina over ruimtewezens per planeet
+7. extra maantjes/ringen etc
+8. frame detailpagina
+9. tekst detailpagina
 */
 
 
 :root {
   --zon-color: goldenrod;
-  --mercurius-color: linear-gradient(to left, white, white 50%, pink 75%, white 75%);
-  --shadow-color: rgba(0 0 0 / .5);
-  
+  --mercurius-color: linear-gradient(90deg, red, goldenrod);
+  --schaduw-gradient:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%);
+  --standaardMaat:1em;
   --tempo:1;
 }
+
+
 
 body {
     background-color: black;
@@ -34,28 +37,31 @@ header {
     font-family: 'Courier New', Courier, monospace;
 
     color: white;
-    text-align: center;
+    text-align: left;
+    padding: 1em 3em;
 }
 
 footer {  
-/*
     position:absolute;
-    bottom: 0;
-    left: 50%;
-*/
+    display:block;
+
+    margin: 0;
+    bottom: var(--standaardMaat);
+    left: 5 * var(--standaardMaat);
+
     font-family: 'Courier New', Courier, monospace;
     
     color: white;
     text-align: center;  
-    margin: 0;
-    padding: 0;
+   
 }
 
 ul {
     position: relative;
-    top:50vmin;
+    top:40vmin;
 
     list-style: none;  
+    transform-style: preserve-3d;
 }
 
 .zon {
@@ -69,10 +75,9 @@ ul {
     
     border-radius: 50%;
     background-color: var(--zon-color);
-    background: radial-gradient(yellow, goldenrod); 
+    background-image: radial-gradient(yellow, goldenrod); 
 
-    transform-style: preserve-3d;
-   
+    transform-style: preserve-3d;   
 }
 
 
@@ -88,60 +93,58 @@ ul {
     
     width: var(--maat);
     height: var(--maat);
-    border: .08em grey solid;
+    border: calc(var(--standaardMaat) * 0.08) grey solid;
     margin: 0;
     padding: 0;
     border-radius: 50%;
-    
+
     transform:rotateX(75deg);
     transform-style: preserve-3d;
 
     animation: draaien calc(var(--orbit-time) * var(--tempo)) linear infinite;
+    
 }
 
+/* planeten bovenkant boven houden en schaduw*/
 div[class$="planeet"] {
-/* planeten bovenkant boven houden*/
     border-radius: 50%;
 
     position:absolute;
     display: block;
-    animation: bovenkantboven var(--orbit-time) linear infinite;
-
     transform:rotatex(90deg);
 
     transform-style: preserve-3d;
+    animation: bovenkantboven var(--orbit-time) linear infinite;
+    /* oporbit var(--orbit-time) linear infinite; */
 
+    background-size: 500% 500%, auto auto;
+    background-position-x:right, center;
 }
     /* height: var(--hoogte); */
-    /* transform:translatey(calc(-var(--hoogte)/2)); */
-    /* door animation "bovenkantboven" wordt translate genegeerd*/
+    /* transform:translatey(calc(var(--hoogte)/-2)); */
 
+/* naam bij planeten
 div[class$="planeet"]::before {
     content:var(--planeetNaam);
     color:white;
     padding:calc(var(--hoogte) * 1.5);
     font-family: 'Courier New', Courier, monospace;
-    font-size: var(--hoogte * 1em);
-}
+    font-size: var(--hoogte);
+} */
 
 .mercurius {
     --maat:19vmin;
     --orbit-time:3s;
-
-    
 }
 
 /* bolletje voor planeet*/
 .mercurius__planeet {
     --planeetNaam:"Mercurius";
     --hoogte: 1vmin;
+    
     height:1vmin;
     width:1vmin;
-    background: var(--mercurius-color);
-
-    transform:translatey(-1vmin);
-
-
+    background:var(--schaduw-gradient), var(--mercurius-color);
 }
 
 .venus {
@@ -154,10 +157,7 @@ div[class$="planeet"]::before {
     --hoogte: 2vmin;
     height: 2vmin;
     width: 2vmin;
-    background: var(--mercurius-color);
-
-    /* transform:translatey(calc(-2vmin/2)); */
-
+    background: var(--schaduw-gradient), var(--mercurius-color);
 }
 
 .aarde {
@@ -170,10 +170,7 @@ div[class$="planeet"]::before {
     --hoogte: 2vmin;
     height: 2vmin;
     width: 2vmin;
-    background: var(--mercurius-color);
-
-    /* transform:translatey(-2vmin); */
-
+    background: var(--schaduw-gradient), var(--mercurius-color);
 }
 
 .mars {
@@ -186,10 +183,7 @@ div[class$="planeet"]::before {
     --hoogte: 1vmin;
     height: 1vmin;
     width: 1vmin;
-    background: var(--mercurius-color);
-
-    /* transform:translatey(calc(-1vmin/2)); */
-
+    background: var(--schaduw-gradient), var(--mercurius-color);
 }
 
 .jupiter {
@@ -202,10 +196,7 @@ div[class$="planeet"]::before {
     --hoogte: 5vmin;
     height:5vmin;
     width:5vmin;
-    background: var(--mercurius-color);
-    
-    /* transform:translatey(-2.5vmin); */
-
+    background: var(--schaduw-gradient), var(--mercurius-color);
 }
 
 .saturnus {
@@ -218,10 +209,7 @@ div[class$="planeet"]::before {
     --hoogte: 5vmin;
     width:5vmin;
     height:5vmin;
-    background: var(--mercurius-color);
-
-    /* transform:translatey(calc(-5vmin/2)); */
-    
+    background: var(--schaduw-gradient), var(--mercurius-color);    
 }
 
 .uranus {
@@ -234,10 +222,7 @@ div[class$="planeet"]::before {
     --hoogte: 3vmin;
     width: 3vmin;
     height: 3vmin;
-    background: var(--mercurius-color);
-
-    /* transform:translatey(calc(-3vmin/2)); */
-
+    background: var(--schaduw-gradient), var(--mercurius-color);
 }
 
 .neptunus {
@@ -250,11 +235,9 @@ div[class$="planeet"]::before {
     --hoogte: 3vmin;
     width: 3vmin;
     height: 3vmin;
-    background: var(--mercurius-color);
-
-    transform:translatey(calc(-3vmin/2));
-    
+    background-image: var(--schaduw-gradient), var(--mercurius-color);  
 }
+
 
 @keyframes draaien {
     0% {
@@ -265,10 +248,28 @@ div[class$="planeet"]::before {
 
 @keyframes bovenkantboven {
     0%{
-    transform: rotatex(-90deg) rotatey(0deg) rotatez(0deg); }
+    transform: rotatex(-90deg) rotatey(0deg) rotatez(0deg);
+    background-position-x:right, center;
+    }
+   50% {
+    background-position-x:center, center;    
+    }
     100%{
-    transform: rotatex(-90deg) rotatey(-365deg) rotatez(0deg);}
+    transform: rotatex(-90deg) rotatey(-365deg) rotatez(0deg);
+    background-position-x:left, center;
+    }
 }
+
+/* @keyframes oporbit{
+    0% {
+        transform:translatey(calc(var(--hoogte)/-2)) rotatey(90deg) rotateZ(90deg);
+    }
+    100% {
+        transform:translatey(calc(var(--hoogte)/-2))  rotatey(90deg) rotatez(90deg);
+    }
+} */
+
+
 
 /* z waarden */
 .zon {
