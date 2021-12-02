@@ -98,7 +98,6 @@ ul {
     padding: 0;
     border-radius: 50%;
 
-    transform:rotateX(75deg);
     transform-style: preserve-3d;
 
     animation: draaien calc(var(--orbit-time) * var(--tempo)) linear infinite;
@@ -111,17 +110,15 @@ div[class$="planeet"] {
 
     position:absolute;
     display: block;
-    transform:rotatex(90deg);
 
     transform-style: preserve-3d;
-    animation: bovenkantboven var(--orbit-time) linear infinite;
-    /* oporbit var(--orbit-time) linear infinite; */
+    animation: schaduw var(--orbit-time) linear infinite,
+    oporbit var(--orbit-time) linear infinite;
 
     background-size: 500% 500%, auto auto;
     background-position-x:right, center;
 }
-    /* height: var(--hoogte); */
-    /* transform:translatey(calc(var(--hoogte)/-2)); */
+
 
 /* naam bij planeten
 div[class$="planeet"]::before {
@@ -246,30 +243,26 @@ div[class$="planeet"]::before {
     transform: rotateX(75deg) rotateZ(-360deg); }
 }
 
-@keyframes bovenkantboven {
+@keyframes schaduw {
     0%{
-    transform: rotatex(-90deg) rotatey(0deg) rotatez(0deg);
     background-position-x:right, center;
     }
-   50% {
+    50% {
     background-position-x:center, center;    
     }
     100%{
-    transform: rotatex(-90deg) rotatey(-365deg) rotatez(0deg);
     background-position-x:left, center;
     }
 }
 
-/* @keyframes oporbit{
+@keyframes oporbit {
     0% {
-        transform:translatey(calc(var(--hoogte)/-2)) rotatey(90deg) rotateZ(90deg);
+    transform: translatey(calc(var(--hoogte)/-2)) rotatex(-75deg) rotatey(0deg); 
     }
     100% {
-        transform:translatey(calc(var(--hoogte)/-2))  rotatey(90deg) rotatez(90deg);
+    transform: translatey(calc(var(--hoogte)/-2)) rotatex(-75deg) rotatey(-365deg); 
     }
-} */
-
-
+}
 
 /* z waarden */
 .zon {
