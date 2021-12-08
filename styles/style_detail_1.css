@@ -4,6 +4,12 @@
 /* 1. hover koepel > klapt open, daarna pas animatie
 2. max. afmeting aan ruimteschip + rik zetten (min is ok)*/
 
+a {
+  color: hotpink;
+}
+a:visited {
+  color: antiquewhite;
+}
 
 body {
     background-color: black;
