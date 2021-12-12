@@ -578,7 +578,8 @@ ul.aliens li {
 }
 
 ul.aliens p {
-  font-size: calc(.75*var(--standaardMaat));
+  font-size: calc(1*var(--standaardMaat));
+  color: var(--labels-color-focus);
 }
 
 ul.aliens article {
