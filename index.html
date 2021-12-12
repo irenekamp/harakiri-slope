@@ -6,26 +6,29 @@
 	<meta name="author" content="Irene">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Encyclopedie der ruimtewezens</title>
+	<title>Encyclopedie der ruimtewezens.</title>
 	
 	<link href="styles/style.css" type="text/css" rel="stylesheet">
+    
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <script src="scripts/script.js" defer></script>
+<!-- defer zorgt ervoor dat html en js tegelijkertijd laden -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
 </head>
 
 <body>
 <header>
-    
-    <h1>Encyclopedie der ruimtewezens</h1>
-    
+    <h1>Encyclopedie der Ruimtewezens.</h1>   
 </header>
 
-    
-<main>
-    
+<main> 
+<article class="container_zonnestelsel">  
 <ul class="zonnestelsel">
     <!-- Zon grootte:15-->
     <li class="zon">
-        
     </li>
     
     <!-- Mercurius grootte:1-->
@@ -67,18 +70,167 @@
     <li class="planeet neptunus">
         <div class="neptunus__planeet"></div>
     </li>
-</ul>    
+</ul>      
+</article>  
 
+<aside>
+    <!-- <h2>kies een planeet</h2>plek voor menu van planeten -->
+    <nav class="planeten_menu">
+        <input type="radio" id="mercurius" name="planeten">
+        <label for="mercurius">Mercurius</label>
+      
+        <input type="radio" id="venus" name="planeten">
+        <label for="venus">Venus</label>
     
+        <input type="radio" id="aarde" name="planeten">
+        <label for="aarde">Aarde</label>
+    
+        <input type="radio" id="mars" name="planeten">
+        <label for="mars">Mars</label>
+    
+        <input type="radio" id="jupiter" name="planeten">
+        <label for="jupiter">Jupiter</label>
+    
+        <input type="radio" id="saturnus" name="planeten">
+        <label for="saturnus">Saturnus</label>
+    
+        <input type="radio" id="uranus" name="planeten">
+        <label for="uranus">Uranus</label>
+     
+        <input type="radio" id="neptunus" name="planeten">
+        <label for="neptunus">Neptunus</label>
+    </nav>
+
+    <ul class="aliens">
+        <li class="mercurius">
+            <article class="ruimteschip"> 
+                <section class="mannetje">
+                  <div class="oog1Links">
+                    <div class="pupil1Links"></div>
+                  </div>
+                  <div class="oog1Rechts">
+                    <div class="pupil1Rechts"></div>
+                  </div>
+                  <div class="mond1"></div>
+                </section>
+                <section class="onderkant">
+                  <div class="lichtEen"></div>
+                  <div class="lichtTwee"></div>
+                  <div class="lichtDrie"></div>
+                  <div class="lichtVier"></div>
+                  <div class="lichtVijf"></div>
+                </section>
+                <sectionv class="koepel"></section>
+              </article>
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Mercurius</h2>
+                <p> Wormvormig, brutaal, komt eigenlijk nooit uit eigen vervoersmiddel.</p>
+            </section>
+        </li>
+
+        <li class="mercurius">
+            <article class="rik">
+                <section class="hoofd2">
+                  <div class="oog2Links">
+                    <div class="pupil2Links"></div>
+                  </div>
+                  <div class="oog2Rechts">
+                     <div class="pupil2Rechts"></div>
+                  </div>
+                  <div class="mond2"></div>
+                </section>
+                <section class="body">
+                  <div class="been2Links">
+                    <div class="vlamLinks"></div>
+                  </div>
+                  <div class="been2Rechts"></div>
+                  <div class="vlamRechts"></div>
+                </section>
+            </article>
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Mercurius</h2>
+                <p> Hard pantser, met raketjes aan de onderkant om snel weg te vliegen.</p>
+            </section>
+        </li>
+        
+        <li class="venus">
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Venus</h2>
+                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+            </section>
+        </li>
+
+        <li class="aarde">
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Aarde</h2>
+                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+            </section>
+        </li>
+
+        <li class="mars">
+            <article class="rik">
+                <section class="hoofd2">
+                  <div class="oog2Links">
+                    <div class="pupil2Links"></div>
+                  </div>
+                  <div class="oog2Rechts">
+                     <div class="pupil2Rechts"></div>
+                  </div>
+                  <div class="mond2"></div>
+                </section>
+                <section class="body">
+                  <div class="been2Links">
+                    <div class="vlamLinks"></div>
+                  </div>
+                  <div class="been2Rechts"></div>
+                  <div class="vlamRechts"></div>
+                </section>
+            </article>
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Mars</h2>
+                <p> Hard pantser, bangig karakter, schuw.</p>
+            </section>
+        </li>
+
+        <li class="jupiter">
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Jupiter</h2>
+                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+            </section>
+        </li>
+
+        <li class="saturnus">
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Saturnus</h2>
+                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+            </section>
+        </li>
+
+        <li class="uranus">
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Saturnus</h2>
+                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+            </section>
+        </li>
+
+        <li class="neptunus">
+            <section class="beschrijving">
+                <h2>Ruimtewezen op planeet Saturnus</h2>
+                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+            </section>
+        </li>
+
+    </ul>
+</aside>
+
 </main>
 
 <footer>
-    
-    <time datetime="2021-11-27"> 27 November 2021 CET Aarde</time>
-    <a href=detail_1.html> aliens! </a>
-      
+    <!-- <time datetime="2021-11-27"> 27 November 2021 <abbr>CET</abbr> Aarde</time> -->
+    <time><span id="datum"></span><abbr title="Central European Time"> CET</abbr> Aarde</time>
 </footer>    
-    
+
+
 </body>
 	
 </html>
