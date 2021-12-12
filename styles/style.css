@@ -97,7 +97,8 @@ h1 {
 }
 
 h2 {
-  font-size: calc(.9 * var(--standaardMaat));
+  font-size: calc(1.1 * var(--standaardMaat));
+  font-weight: 800;
 }
 
 footer {  
@@ -579,7 +580,8 @@ ul.aliens li {
 
 ul.aliens p {
   font-size: calc(1*var(--standaardMaat));
-  color: var(--labels-color-focus);
+  color: var(--text-color-labels);
+  font-weight: 500;
 }
 
 ul.aliens article {
