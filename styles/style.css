@@ -9,34 +9,54 @@
 --zon-ster: radial-gradient(circle, rgba(218,165,32,0) 0%, rgba(255,220,0,1) 35%, rgba(255,254,254,1) 100%);
 
 --mercurius-color: #e50051;
---mercurius-planeet: radial-gradient(circle, rgba(229,0,140,1) 0%, rgba(229,0,140,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--mercurius-planeet: radial-gradient(circle, rgba(229,0,81,1) 0%, rgba(229,0,81,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--mercurius-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(229,0,81, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(229,0,81, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(229,0,81, 1) 93%, rgba(238, 130, 238, 0) 96%);
 
 --venus-color: #e5008c;
 --venus-planeet: radial-gradient(circle, rgba(229,0,140,1) 0%, rgba(229,0,140,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--venus-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(229,0,140, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(229,0,140, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(229,0,140, 1) 93%, rgba(238, 130, 238, 0) 96%);
+
 
 --aarde-color: #951b81;
 --aarde-planeet:radial-gradient(circle, rgba(149,27,129,1) 0%, rgba(149,27,129,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--aarde-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(149,27,129, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(149,27,129, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(149,27,129, 1) 93%, rgba(238, 130, 238, 0) 96%);
+
 
 --mars-color: #4a09f7;
 --mars-planeet: radial-gradient(circle, rgba(74,9,247,1) 0%, rgba(74,9,247,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--mars-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(74,9,247, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(74,9,247, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(74,9,247, 1) 93%, rgba(238, 130, 238, 0) 96%);
+
 
 --jupiter-color: #0069b4;
 --jupiter-planeet:radial-gradient(circle, rgba(0,105,180,1) 0%, rgba(0,105,180,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--jupiter-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0,105,180, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(0,105,180, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(0,105,180, 1) 93%, rgba(238, 130, 238, 0) 96%);
 
 --saturnus-color: #009a93;
 --saturnus-planeet: radial-gradient(circle, rgba(0,154,147,1) 0%, rgba(0,154,147,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--saturnus-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0,154,147, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(0,154,147, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(0,154,147, 1) 93%, rgba(238, 130, 238, 0) 96%);
 
 --uranus-color: #3aaa35;
 --uranus-planeet:radial-gradient(circle, rgba(58,170,53,1) 0%, rgba(58,170,53,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--uranus-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(58,170,53, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(58,170,53, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(58,170,53, 1) 93%, rgba(238, 130, 238, 0) 96%);
 
 --neptunus-color: #008000;
 --neptunus-planeet:  radial-gradient(circle, rgba(0,128,0,1) 0%, rgba(0,128,0,1) 35%, rgba(0,0,0,.8) 95%, rgba(0,0,0,1) 100%);
+--neptunus-behang:
+radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0,128,0, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(0,128,0, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(0,128,0, 1) 93%, rgba(238, 130, 238, 0) 96%);
 
 --schaduw-gradient: radial-gradient(circle, rgba(0,0,0,0) 25%, rgba(0,0,0,.85) 35%, rgba(0,0,0,.85) 100%);
 --font-color: white;
 
 --galaxy-background: radial-gradient(ellipse at 50% 50%, rgba(125, 0, 125, 1) 0%, rgba(18, 1, 33, 0) 45%);
---sterren: radial-gradient(circle at 50% 50%, rgba(255, 248, 207, .2) 1%, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 0) 101%);
+--sterren: radial-gradient(circle at 50% 50%, rgba(255, 248, 207, .35) 1%, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 0) 101%);
+--sterren2: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(125, 0, 125, .5) 2%, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0) 30%, rgba(125, 0, 125, .5) 32%, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 0) 90%, rgba(125, 0, 125, 1) 93%, rgba(238, 130, 238, 0) 96%);
 --encyclopedie-background: rgba(255,255,255,.5);
 
 --header-footer-background: #120121;
@@ -63,36 +83,49 @@ font-family:'Raleway', sans-serif;
 }
 
 body {
-    background-color:var(--header-footer-background);
-    background-image: var(--sterren), var(--sterren);
-    background-size: 
+  background-color:var(--header-footer-background);
+ 
+  background-image: var(--sterren), var(--sterren);
+  background-size: 
     calc(2.5*var(--standaardMaat)) calc(2.5*var(--standaardMaat)),
     calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
     /* calc(10*var(--standaardMaat)) calc(10*var(--standaardMaat));   */
     
-    background-position: 
+  background-position: 
     calc(100*var(--standaardMaat)) calc(5*var(--standaardMaat)),
     calc(20*var(--standaardMaat)) calc(50*var(--standaardMaat));
-    /* calc(50*var(--standaardMaat)) calc(100*var(--standaardMaat)); */
-
+    /* calc(250*var(--standaardMaat)) calc(100*var(--standaardMaat)); */
+  /* animation: sterren 250s alternate-reverse infinite; */
 }
+@keyframes sterren {
+  0%, 100% {
+    background-size: 
+    calc(2.5*var(--standaardMaat)) calc(2.5*var(--standaardMaat)),
+    calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+    /* calc(10*var(--standaardMaat)) calc(10*var(--standaardMaat)); */
+   }
 
-
-
+  50% {
+    background-size: 
+    calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat)),
+    calc(10*var(--standaardMaat)) calc(10*var(--standaardMaat));
+    /* calc(10*var(--standaardMaat)) calc(10*var(--standaardMaat)); */
+  }
+}
 header{
-    font-size: calc(1.15* var(--standaardMaat)); 
-    text-align: left;
-    padding: calc(.5*var(--standaardMaat)) calc(1*var(--standaardMaat));
-    margin:0;
+  font-size: calc(1.15* var(--standaardMaat)); 
+  text-align: left;
+  padding: calc(.5*var(--standaardMaat)) calc(1*var(--standaardMaat));
+  margin:0;
 }
 
 h1 {
-    margin:0;
+  margin:0;
 
-    font-family:'Audiowide', cursive;
-    letter-spacing: calc(.1*var(--standaardMaat));
+  font-family:'Audiowide', cursive;
+  letter-spacing: calc(.1*var(--standaardMaat));
 
-    color: var(--font-color);
+  color: var(--font-color);
     /* text-shadow: 0 0 calc(.25*var(--standaardMaat)) grey; */
 }
 
@@ -102,28 +135,28 @@ h2 {
 }
 
 footer {  
-    margin: 0;
-    position: fixed;
-    bottom: var(--standaardMaat);
-    left: calc(1.5*var(--standaardMaat));
+  margin: 0;
+  position: fixed;
+  bottom: var(--standaardMaat);
+  left: calc(1.5*var(--standaardMaat));
 
-    color: var(--text-color-labels);
-    font-size: calc(.75*var(--standaardMaat));
-    font-weight: 300;
-    text-align:left;  
+  color: var(--text-color-labels);
+  font-size: calc(.75*var(--standaardMaat));
+  font-weight: 300;
+  text-align:left;  
 
-    height: calc(2*var(--standaardMaat));
-    padding: calc(1*var(--standaardMaat));
-    margin: calc(1*var(--standaardMaat)) 0;
+  height: calc(2*var(--standaardMaat));
+  padding: calc(1*var(--standaardMaat));
+  margin: calc(1*var(--standaardMaat)) 0;
 
-    background-color: var(--header-footer-background);
-    border-radius: calc(1*var(--standaardMaat));
-    box-shadow: 
+  background-color: var(--header-footer-background);
+  border-radius: calc(1*var(--standaardMaat));
+  box-shadow: 
     0 0 calc(.25*var(--standaardMaat)) var(--footer-glow),
     0 0 calc(.5*var(--standaardMaat)) var(--footer-glow);
     /* 0 0 calc(.85*var(--standaardMaat)) var(--footer-glow),
     0 0 calc(1.25*var(--standaardMaat)) var(--footer-glow); */
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 time {
   position: relative;
@@ -136,97 +169,93 @@ abbr {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: calc(1*var(--standaardMaat));
-    margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: calc(1*var(--standaardMaat));
+  margin:0;
    
 }
 
-/* .anders {
-  border: 5px solid hotpink;
-} */
 
 /*** PLANETEN STELSEL ***/
 article.container_zonnestelsel {
-    flex:2 45em;
-    min-height: calc(15*var(--standaardMaat));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  flex:2 45em;
+  min-height: calc(15*var(--standaardMaat));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-    /* background-color: var(--font-color); */
-    background-image: var(--galaxy-background);   
-    background-size: 155% 100%;
-    background-position: center;
-    overflow-x: hidden;
+  background-image: var(--galaxy-background);   
+  background-size: 155% 100%;
+  background-position: center;
+  overflow-x: hidden;
 }
 
 ul.zonnestelsel {
-    list-style: none;  
-    margin:0;
-    padding: 0;
-    border: 0;
+  list-style: none;  
+  margin:0;
+  padding: 0;
+  border: 0;
 
-    transform-style: preserve-3d; 
+  transform-style: preserve-3d; 
 }
 
 .zon {
-    position: absolute;
-    display: block;
-    top:calc((100% - 7.5 * var(--standaardMaat)) /2); 
-    left:calc((100% - 7.5 * var(--standaardMaat)) /2);
+  position: absolute;
+  display: block;
+  top:calc((100% - 7.5 * var(--standaardMaat)) /2); 
+  left:calc((100% - 7.5 * var(--standaardMaat)) /2);
         
-    width: calc(7.5*var(--standaardMaat));
-    height: calc(7.5*var(--standaardMaat));
+  width: calc(7.5*var(--standaardMaat));
+  height: calc(7.5*var(--standaardMaat));
     
-    border-radius: 50%;
-    box-shadow: 0 0 calc(.1* var(--standaardMaat)) calc(0.3* var(--standaardMaat)) var(--zon-color)rod;
+  border-radius: 50%;
+  box-shadow: 0 0 calc(.1* var(--standaardMaat)) calc(0.3* var(--standaardMaat)) var(--zon-color);
 
-    background-color: var(--zon-color);
-    background-image: var(--zon-ster);
-    filter: blur(calc(.2 *var(--standaardMaat))); 
+  background-color: var(--zon-color);
+  background-image: var(--zon-ster);
+  filter: blur(calc(.2 *var(--standaardMaat))); 
 
-    transform-style: preserve-3d;   
+  transform-style: preserve-3d;   
 }
 
 /*cirkel voor pad-orbit om zon*/
 .planeet {
-    position: absolute;
+  position: absolute;
     
-    display:flex;
-    justify-content: center;
+  display:flex;
+  justify-content: center;
     
-    top:calc((100% - var(--maat)) /2);
-    left:calc((100% - var(--maat)) /2);
+  top:calc((100% - var(--maat)) /2);
+  left:calc((100% - var(--maat)) /2);
     
-    width: var(--maat);
-    height: var(--maat);
-    border: calc(var(--standaardMaat) * 0.08) grey solid;
-    margin: 0;
-    padding: 0;
-    border-radius: 50%;
+  width: var(--maat);
+  height: var(--maat);
+  border: calc(var(--standaardMaat) * 0.08) grey solid;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
 
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
 
-    animation: draaien calc(var(--orbit-time) * var(--tempo)) linear infinite;
+  animation: draaien calc(var(--orbit-time) * var(--tempo)) linear infinite;
 }
 
 /* planeten bovenkant boven houden en schaduw*/
 div[class$="planeet"] {
-    border-radius: 50%;
+  position:absolute;
+  display: block;
 
-    position:absolute;
-    display: block;
+  border-radius: 50%;
 
-    transform-style: preserve-3d;
-    animation: schaduw var(--orbit-time) linear infinite,
+  transform-style: preserve-3d;
+  animation: schaduw var(--orbit-time) linear infinite,
     oporbit var(--orbit-time) linear infinite;
 
-    background-size: 500% 500%, auto auto;
-    background-position:center, center;
+  background-size: 500% 500%, auto auto;
+  background-position:center, center;
 }
 
 /* naam bij planeten
@@ -415,13 +444,14 @@ aside {
     padding: var(--standaardMaat) calc(2*var(--standaardMaat));
     min-height: calc(10*var(--standaardMaat));
     border-radius: calc(1*var(--standaardMaat));
+
     border: solid calc(.01*var(--standaardMaat)) grey;
-    box-shadow:inset 0 0 calc(.5*var(--standaardMaat)) calc(.25*var(--standaardMaat)) rgba(17,1,33,1);
+    box-shadow:
+    inset 0 0 calc(.5*var(--standaardMaat)) calc(.25*var(--standaardMaat)) rgba(17,1,33,1);
 /* LET OP NOG variable maken van kleur box-shadow */
-    font-size: calc(.9*var(--standaardMaat));
-    font-weight: 400;
+
     letter-spacing: calc(.05*var(--standaardMaat));
-      color: var(--text-color-labels);
+    color: var(--text-color-labels);
 
     margin: calc(.5*var(--standaardMaat)) calc(1.5*var(--standaardMaat));
     overflow: auto;
@@ -561,14 +591,25 @@ ul.aliens {
 
     border-radius: calc(.5*var(--standaardMaat));
     background-color: var(--header-footer-background);
+
     margin: calc(1*var(--standaardMaat)) 0;
     padding: 0;
+
+    /* box-shadow:
+    inset 0 0 calc(.1*var(--standaardMaat)) calc(.02*var(--standaardMaat)) var(--footer-glow),
+    inset 0 0 calc(.5*var(--standaardMaat)) calc(.05*var(--standaardMaat)) var(--footer-glow); */
+
 }
 
 ul.aliens li {
     height: calc(25 * var(--standaardMaat));
     min-width: calc(20 * var(--standaardMaat));
     padding: calc(1*var(--standaardMaat));
+
+    /* background-image: var(--sterren2);
+    background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+    background-repeat: round; */
+
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -623,8 +664,50 @@ ul.mercurius li:not(.mercurius) {
     display:none;
   }
 
+ul.aliens li.mercurius {
+  background-image: var(--mercurius-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
+ul.aliens li.venus {
+  background-image: var(--venus-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
+ul.aliens li.aarde {
+  background-image: var(--aarde-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
+ul.aliens li.mars {
+  background-image: var(--mars-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
+ul.aliens li.jupiter {
+  background-image: var(--jupiter-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
+ul.aliens li.saturnus {
+  background-image: var(--saturnus-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
+ul.aliens li.uranus {
+  background-image: var(--uranus-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
+ul.aliens li.neptunus {
+  background-image: var(--neptunus-behang);
+  background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
+  background-repeat: round;
+}
 
-
+.beschrijving {
+  background-color: var(--header-footer-background);
+}
 /**********************************************
 Ruimtewezen 1
 ***********************************************/
