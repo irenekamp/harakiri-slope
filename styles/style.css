@@ -252,7 +252,7 @@ div[class$="planeet"] > label{
   
   border-radius: 50%;
   transform-style: preserve-3d;
-  transform: rotatey(180deg) translatez(calc(.02*var(--standaardMaat))); 
+  transform: rotatey(180deg) translatez(calc(.2*var(--standaardMaat))); 
   box-shadow: none;
  
 }
