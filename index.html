@@ -28,47 +28,47 @@
 <article class="container_zonnestelsel">  
 <ul class="zonnestelsel">
     <!-- Zon grootte:15-->
-    <li class="zon">
+    <li class="zon"><label for="zonnestelsel1">""</label>
     </li>
     
     <!-- Mercurius grootte:1-->
     <li class="planeet mercurius">
-        <div class="mercurius__planeet"></div>
+        <div class="mercurius__planeet"><label for="mercurius"></label></div>
     </li>
     
     <!-- Venus grootte:2-->
     <li class="planeet venus">
-        <div class="venus__planeet"></div>
+        <div class="venus__planeet"><label for="venus"></label></div>
     </li>
     
     <!-- Aarde grootte:2-->
     <li class="planeet aarde">
-        <div class="aarde__planeet"></div>
+        <div class="aarde__planeet"><label for="aarde"></label></div>
     </li>
     
     <!-- Mars grootte:1-->
     <li class="planeet mars">
-        <div class="mars__planeet"></div>
+        <div class="mars__planeet"><label for="mars"></label></div>
     </li>
     
     <!-- Jupiter grootte:5-->
     <li class="planeet jupiter">
-        <div class="jupiter__planeet"></div>
+        <div class="jupiter__planeet"><label for="jupiter"></label></div>
     </li>
     
     <!-- Saturnus grootte:5 NB: 2 ringen-->
     <li class="planeet saturnus">
-        <div class="saturnus__planeet"></div>
+        <div class="saturnus__planeet"><label for="saturnus"></label></div>
     </li>
     
     <!-- Uranus grootte:3-->
     <li class="planeet uranus">
-        <div class="uranus__planeet"></div>
+        <div class="uranus__planeet"><label for="uranus"></label></div>
     </li>
     
     <!-- Neptunus grootte:3-->
     <li class="planeet neptunus">
-        <div class="neptunus__planeet"></div>
+        <div class="neptunus__planeet"><label for="neptunus"></label></div>
     </li>
 </ul>      
 </article>  
@@ -76,6 +76,9 @@
 <aside>
     <!-- <h2>kies een planeet</h2>plek voor menu van planeten -->
     <nav class="planeten_menu">
+        <input type="radio" id="zonnestelsel1" name="planeten" checked>
+        <label for="zonnestelsel1">Zonnestelsel</label>
+
         <input type="radio" id="mercurius" name="planeten">
         <label for="mercurius">Mercurius</label>
       
@@ -129,43 +132,48 @@
         </li>
 
         <li class="mercurius">
-            <article class="rik">
-                <section class="hoofd2">
-                  <div class="oog2Links">
-                    <div class="pupil2Links"></div>
+            <article class="rwMercurius"> 
+                <section class="rwMercuriusBody">
+                  <div class="rwMercuriusoogLinks">
+                  <div class="rwMercuriuspupilLinks"></div>
                   </div>
-                  <div class="oog2Rechts">
-                     <div class="pupil2Rechts"></div>
+                  <div class="rwMercuriusoogRechts">
+                  <div class="rwMercuriuspupilRechts"></div>
                   </div>
-                  <div class="mond2"></div>
+                  <div class="rwMercuriusmond"></div>
                 </section>
-                <section class="body">
-                  <div class="been2Links">
-                    <div class="vlamLinks"></div>
-                  </div>
-                  <div class="been2Rechts"></div>
-                  <div class="vlamRechts"></div>
-                </section>
-            </article>
+             </article>
             <section class="beschrijving">
                 <h2>Ruimtewezen op planeet Mercurius</h2>
-                <p> Hard pantser, met raketjes aan de onderkant om snel weg te vliegen.</p>
+                <p> Wanneer het uit z'n vervoersmiddel gehaald wordt, wordt t wat sip.</p>
             </section>
         </li>
         
         <li class="venus">
-            <article></article>
+            <article class="ruimtewezenVenus1">
+                    <section class="rwVenusHoofd">
+                      <div class="rwVenusOogL"></div>
+                      <div class="rwVenusOogR"></div>
+                      <div class="rwVenusPupilL"></div>
+                      <div class="rwVenusPupilR"></div>
+                      <div class="rwVenusMond"></div>
+                    </section>
+                </article>
+
             <section class="beschrijving">
                 <h2>Ruimtewezen op planeet Venus</h2>
-                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+                <p>Beetje vergeetachtig, is over alles verbaasd.</p>
             </section>
         </li>
 
         <li class="aarde">
-            <article></article>
+            <article class="scannen" >
+                   <div class="lijn"></div>
+                   <div class="punt"></div>
+            </article>
             <section class="beschrijving">
                 <h2>Ruimtewezen op planeet Aarde</h2>
-                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+                <p>Scanning in process: nog geen buitenaardsewezens gevonden.</p>
             </section>
         </li>
 
@@ -195,34 +203,55 @@
         </li>
 
         <li class="jupiter">
-            <article></article>
+            <article class="scannen" >
+                <div class="lijn"></div>
+                <div class="punt"></div>
+         </article>
             <section class="beschrijving">
                 <h2>Ruimtewezen op planeet Jupiter</h2>
-                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+                <p>Scanning in process: nog geen buitenaardsewezens gevonden.</p>
             </section>
         </li>
 
         <li class="saturnus">
-            <article></article>
+            <article class="scannen" >
+                <div class="lijn"></div>
+                <div class="punt"></div>
+         </article>
             <section class="beschrijving">
                 <h2>Ruimtewezen op planeet Saturnus</h2>
-                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+                <p>Scanning in process: nog geen buitenaardsewezens gevonden.</p>
             </section>
         </li>
 
         <li class="uranus">
-            <article></article>
+            <article class="ruimtewezenUranus1">
+                <section class="rwUranusHoofd">
+                  <div class="rwUranusOogL"></div>
+                  <div class="rwUranusOogR"></div>
+                  <div class="rwUranusPupilL"></div>
+                  <div class="rwUranusPupilR"></div>
+                  <div class="rwUranusNeus"></div>
+                  <div class="rwUranusMond"></div>
+                  <div class="rwUranusBody"></div>
+                  <div class="rwUranusstaart"></div>
+                  <div class="ijsdruppel"></div>
+                <section>
+              </article>
             <section class="beschrijving">
-                <h2>Ruimtewezen op planeet Saturnus</h2>
-                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+                <h2>Ruimtewezen op planeet Uranus</h2>
+                <p> Vanwege de kou erg traag, altijd koude neus. </p>
             </section>
         </li>
 
         <li class="neptunus">
-            <article></article>
+            <article class="scannen" >
+                <div class="lijn"></div>
+                <div class="punt"></div>
+         </article>
             <section class="beschrijving">
-                <h2>Ruimtewezen op planeet Saturnus</h2>
-                <p> helaas hier nog geen buitenaardsewezens gevonden</p>
+                <h2>Ruimtewezen op planeet Neptunus</h2>
+                <p>Scanning in process: nog geen buitenaardsewezens gevonden.</p>
             </section>
         </li>
 
