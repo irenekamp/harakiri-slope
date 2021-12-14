@@ -202,7 +202,7 @@ ul.zonnestelsel {
   transform-style: preserve-3d; 
 }
 
-.zon {
+.zon, li.zon > label {
   position: absolute;
   display: block;
   top:calc((100% - 7.5 * var(--standaardMaat)) /2); 
@@ -243,8 +243,25 @@ ul.zonnestelsel {
   animation: draaien calc(var(--orbit-time) * var(--tempo)) linear infinite;
 }
 
+/* labels planeten rechtzetten */
+div[class$="planeet"] > label{
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  display: block;
+  
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transform: rotatey(180deg); 
+  box-shadow: none;
+}
+/*** labels planeten stylen ***/
+div[class$="planeet"] > label:hover {
+  box-shadow: 0 0 calc(1*var(--standaardMaat)) calc(.5*var(--standaardMaat)) var(--zon-color);
+}
+
 /* planeten bovenkant boven houden en schaduw*/
-div[class$="planeet"] {
+div[class$="planeet"]{
   position:absolute;
   display: block;
 
@@ -258,22 +275,13 @@ div[class$="planeet"] {
   background-position:center, center;
 }
 
-/* naam bij planeten
-div[class$="planeet"]::before {
-    content:var(--planeetNaam);
-    color:white;
-    padding:calc(var(--hoogte) * 1.5);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: var(--hoogte);
-} */
-
 .mercurius {
     --maat:calc(9.5*var(--standaardMaat));
     --orbit-time:3s;
 }
 
 /* bolletje voor planeet*/
-.mercurius__planeet {
+.mercurius__planeet, div.mercurius__planeet > label {
     --planeetNaam:"Mercurius";
     --hoogte:calc(.5*var(--standaardMaat));
     
@@ -287,7 +295,7 @@ div[class$="planeet"]::before {
     --orbit-time:3s;
 }
 
-.venus__planeet {
+.venus__planeet, div.venus__planeet > label {
     --planeetNaam:"Venus";
     --hoogte: var(--standaardMaat);
     height: var(--hoogte);
@@ -300,7 +308,7 @@ div[class$="planeet"]::before {
     --orbit-time:10s;
 }
 
-.aarde__planeet {
+.aarde__planeet, div.aarde__planeet > label {
     --planeetNaam:"Aarde";
     --hoogte: var(--standaardMaat);
     height: var(--hoogte);
@@ -313,7 +321,7 @@ div[class$="planeet"]::before {
     --orbit-time:1s;
 }
 
-.mars__planeet {
+.mars__planeet, div.mars__planeet > label {
     --planeetNaam:"Mars";
     --hoogte: calc(.5*var(--standaardMaat));
     height: var(--hoogte);
@@ -326,7 +334,7 @@ div[class$="planeet"]::before {
     --orbit-time:30s;
 }
 
-.jupiter__planeet {
+.jupiter__planeet, div.jupiter__planeet > label {
     --planeetNaam:"Jupiter";
     --hoogte: calc(2.5*var(--standaardMaat));
     height:var(--hoogte);
@@ -339,7 +347,7 @@ div[class$="planeet"]::before {
     --orbit-time:50s;
 }
 
-.saturnus__planeet{
+.saturnus__planeet, div.saturnus__planeet > label {
     --planeetNaam:"Saturnus";
     --hoogte: calc(2.5*var(--standaardMaat));
     width:var(--hoogte);
@@ -352,7 +360,7 @@ div[class$="planeet"]::before {
     --orbit-time:90s;
 }
 
-.uranus__planeet{
+.uranus__planeet, div.uranus__planeet > label{
     --planeetNaam:"Uranus";
     --hoogte: calc(1.5*var(--standaardMaat));
     width: var(--hoogte);
@@ -365,14 +373,13 @@ div[class$="planeet"]::before {
     --orbit-time:9s;
 }
 
-.neptunus__planeet {
+.neptunus__planeet, div.neptunus__planeet > label {
     --planeetNaam:"Neptunus";
     --hoogte: calc(1.5*var(--standaardMaat));
     width: var(--hoogte);
     height: var(--hoogte);
     background-image: var(--schaduw-gradient), var(--neptunus-planeet);  
 }
-
 
 @keyframes draaien {
     0% {
@@ -448,7 +455,6 @@ aside {
     border: solid calc(.01*var(--standaardMaat)) grey;
     box-shadow:
     inset 0 0 calc(.5*var(--standaardMaat)) calc(.25*var(--standaardMaat)) rgba(17,1,33,1);
-/* LET OP NOG variable maken van kleur box-shadow */
 
     letter-spacing: calc(.05*var(--standaardMaat));
     color: var(--text-color-labels);
@@ -490,10 +496,13 @@ label {
     background-color: var(--labels-color);     
     box-shadow: calc(.1*var(--standaardMaat)) calc(.1*var(--standaardMaat)) var(--label-shadow);
   }
- input[type="radio"]:focus + label {
+input[type="radio"]:focus + label {
     color: var(--labels-color-focus);
   }
-  input[id="mercurius"]:focus + label {
+input[id="zonnestelsel1"]:focus + label {
+    background-color: var(--zon-color);
+  }
+input[id="mercurius"]:focus + label {
     background-color: var(--mercurius-color);
   }
   input[id="venus"]:focus + label {
@@ -521,6 +530,9 @@ label {
   input[type="radio"]:hover + label{
     background-color: var(--labels-color);
     box-shadow: 0 0;
+  }
+input[id="zonnestelsel1"]:hover + label {
+    color: var(--zon-color);
   }
   input[id="mercurius"]:hover + label {
     color: var(--mercurius-color);
@@ -554,7 +566,9 @@ label {
     0 0 calc(.25 * var(--standaardMaat)) var(--labels-licht),
     0 0 calc(.35 * var(--standaardMaat)) var(--labels-licht);
   }
-
+  input[id="zonnestelsel1"]:checked + label {
+    color: var(--zon-color);
+  }
   input[id="mercurius"]:checked + label {
     color: var(--mercurius-color);
   }
@@ -606,15 +620,13 @@ ul.aliens li {
     min-width: calc(20 * var(--standaardMaat));
     padding: calc(1*var(--standaardMaat));
 
-    /* background-image: var(--sterren2);
-    background-size: calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
-    background-repeat: round; */
-
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 
     border-left: calc(.15*var(--standaardMaat)) dotted var(--encyclopedie-background);
 }
@@ -915,6 +927,192 @@ article.ruimteschip:hover .koepel {
       transform: rotatez(-90deg);
     }
 }
+/*** RUIMTEWEZEN MERCURIUS UIT SCHIP ***/
+.rwMercurius {
+  position: relative;
+     
+  top: calc(-1*var(--standaardMaat));
+  left: calc(-5*var(--standaardMaat));
+  
+  animation: zweven 2s ease-in-out infinite;
+ 
+}
+.rwMercuriusBody {
+    position: relative;
+     
+   top: calc(4*var(--standaardMaat));
+   left: calc(5*var(--standaardMaat));
+     
+   width: calc(5*var(--standaardMaat));
+   height: calc(9*var(--standaardMaat));
+   border-radius: calc(2*var(--standaardMaat)) calc(2*var(--standaardMaat)) calc(.5*var(--standaardMaat)) calc(.5*var(--standaardMaat));
+     
+   background-color: green;
+   box-shadow: inset calc(.5*var(--standaardMaat)) calc(.2*var(--standaardMaat)) rgba(200, 150, 50, 0.3);
+}
+
+div[class^="rwMercuriusoog"]  {
+  width: calc(1.5*var(--standaardMaat));
+     height: calc(1.5*var(--standaardMaat));
+     border-radius: 50%;
+     background-color: white;
+     box-shadow: 0.02vw .4vw .2vw 0 rgba(0, 0, 0, .2);
+}
+
+.rwMercuriusoogLinks {
+   position: relative;
+     top: var(--standaardMaat);
+     left: var(--standaardMaat);
+}
+
+.rwMercuriusoogRechts {
+    position: absolute;  
+     top: var(--standaardMaat);
+     left: calc(2.5*var(--standaardMaat));
+}
+
+div[class^="rwMercuriuspupil"] {
+    width: calc(.5*var(--standaardMaat));
+     height: calc(.5*var(--standaardMaat));
+     border-radius: 50%;
+     
+     background-color: black;
+}
+
+.rwMercuriuspupilLinks {
+     position: relative;
+     top: calc(.5*var(--standaardMaat));
+     left: calc(.5*var(--standaardMaat));
+}
+
+.rwMercuriuspupilRechts {
+  position: relative;
+     top: calc(.5*var(--standaardMaat));
+     left: calc(.5*var(--standaardMaat));
+  
+}
+
+.rwMercuriusmond {
+  position: relative;
+     
+     top: calc(2*var(--standaardMaat));
+     left: calc(2*var(--standaardMaat));
+     width: var(--standaardMaat);
+     height: calc(.3*var(--standaardMaat));
+     border-radius: 50% 50% 0 0;
+     
+     background-color: orangered;
+     box-shadow: 0.02vw .2vw .2vw 0 rgba(0, 0, 0, .2);
+     }
+
+/*** RUIMTEWEZEN VENUS ***/
+.rwVenusHoofd {
+  position: relative;
+  top: calc(3*var(--standaardMaat));
+  height: calc(5*var(--standaardMaat));
+  width: calc(5*var(--standaardMaat));
+  
+  border-radius: 50% 50%;
+  transform-origin: right;
+  background-color: var(--venus-color);
+  animation: venus1 5s linear infinite;
+}
+@keyframes venus1{
+  33% {
+    transform: translatex(calc(-6*var(--standaardMaat)));
+  }
+  66% {
+    transform: translatex(calc(6*var(--standaardMaat)));
+  }
+}
+.rwVenusOogL{
+  position: relative;
+
+  left: calc(.5*var(--standaardMaat));
+  height: calc(2*var(--standaardMaat));
+  width: calc(2*var(--standaardMaat));
+  
+  border-radius: 50% 50%;
+  background-color: white;
+}
+
+.rwVenusOogR{
+  position: relative;
+  top: calc(-2*var(--standaardMaat));
+  left: calc(2.5*var(--standaardMaat));
+  
+  height: calc(2*var(--standaardMaat));
+  width: calc(2*var(--standaardMaat));
+  
+  border-radius: 50% 50%;
+  background-color: white;
+}
+
+.rwVenusPupilR {
+  position: relative;
+  top: calc(-3.5*var(--standaardMaat));
+  left: calc(1.5*var(--standaardMaat));
+  
+  height: calc(.5*var(--standaardMaat));
+  width: calc(.5*var(--standaardMaat));
+  
+  border-radius: 50% 50%;
+  background-color: black;
+  animation: verbaasd .3s alternate infinite;
+}
+
+
+.rwVenusPupilL {
+  position: relative;
+  top: calc(-3*var(--standaardMaat));
+  left: calc(3*var(--standaardMaat));
+  
+  height: calc(.5*var(--standaardMaat));
+  width: calc(.5*var(--standaardMaat));
+  
+  border-radius: 50% 50%;
+  background-color: black;
+  animation: verbaasd .3s alternate infinite;
+}
+
+.rwVenusMond {
+   position: relative;
+  top: calc(-2*var(--standaardMaat));
+  left: calc(1*var(--standaardMaat));
+  
+  height: calc(.05*var(--standaardMaat));
+  width: calc(3*var(--standaardMaat));
+  border-radius: calc(.5*var(--standaardMaat));
+  background-color: orangered;
+  animation: ohoh 2s alternate infinite;
+}
+
+@keyframes ohoh {
+  5% {
+    transform: translatex(calc(.8*var(--standaardMaat))) translatey(calc(-.5*var(--standaardMaat)));
+    height: calc(1.5*var(--standaardMaat));
+    width: calc(1.5*var(--standaardMaat));
+    
+    border-radius: 50% 50%;
+  }
+  100% {
+    transform: translatex(calc(.8*var(--standaardMaat))) translatey(calc(-.5*var(--standaardMaat)));
+    height: calc(1.5*var(--standaardMaat));
+    width: calc(1.5*var(--standaardMaat));
+    
+    border-radius: 50% 50%;
+  }
+}
+
+@keyframes verbaasd {
+  25% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(2);
+  }
+
+}
 
 /**********************************************
  Ruimtewezen 2
@@ -925,7 +1123,7 @@ article.rik {
     height: calc(12.5*var(--standaardMaat));
     } 
     
-li.alien_mars:hover article.rik{
+li.mars:hover article.rik{
       animation: disappear .3s linear;
       animation-fill-mode: forwards;
     }
@@ -1111,3 +1309,185 @@ li.alien_mars:hover article.rik{
         transform:translate(-50%) scale(0.1);
         }
     }
+
+    /*** RUIMTEWEZEN URANUS ***/
+
+  .rwUranusHoofd {
+      position: relative;
+      left: calc(5*var(--standaardMaat));
+      
+      height: calc(15*var(--standaardMaat));
+      width: calc(2.5*var(--standaardMaat));
+      
+      border-radius: calc(2*var(--standaardMaat));
+      
+      background-color: var(--uranus-color);
+      animation:kruipen 25s alternate infinite;
+      box-shadow: inset calc(-.2*var(--standaardMaat)) calc(.1*var(--standaardMaat)) rgba(19, 22, 20, 0.6);
+    }
+    
+  .rwUranusOogL{
+      position: relative;
+    
+      left: calc(-1*var(--standaardMaat));
+      height: calc(2*var(--standaardMaat));
+      width: calc(2*var(--standaardMaat));
+      
+      border-radius: 50% 50%;
+      background-color: white;
+    }
+    
+  .rwUranusOogR{
+      position: relative;
+      top: calc(-2*var(--standaardMaat));
+      left: calc(1.5*var(--standaardMaat));
+      
+      height: calc(2*var(--standaardMaat));
+      width: calc(2*var(--standaardMaat));
+      
+      border-radius: 50% 50%;
+      background-color: white;
+    }
+    
+  .rwUranusPupilR {
+      position: relative;
+      top: calc(-3.5*var(--standaardMaat));
+      left: calc(-.5*var(--standaardMaat));
+      
+      height: calc(.5*var(--standaardMaat));
+      width: calc(.5*var(--standaardMaat));
+      
+      border-radius: 50% 50%;
+      background-color: black;
+    }
+    
+  .rwUranusPupilL {
+      position: relative;
+      top: calc(-3*var(--standaardMaat));
+      left: calc(2.5*var(--standaardMaat));
+      
+      height: calc(.5*var(--standaardMaat));
+      width: calc(.5*var(--standaardMaat));
+      
+      border-radius: 50% 50%;
+      background-color: black;
+    }
+    
+  .rwUranusNeus {
+      position: relative;
+      top: calc(-3*var(--standaardMaat));
+      left: calc(1*var(--standaardMaat));
+      
+      height: calc(1*var(--standaardMaat));
+      width: calc(1*var(--standaardMaat));
+        
+      border-radius: 50% 50%;
+      background-color: orangered;
+    }
+
+  .rwUranusMond {
+    position: relative;
+    top: calc(-2*var(--standaardMaat));
+    left: calc(1*var(--standaardMaat));
+    
+    height: calc(.3*var(--standaardMaat));
+    width: calc(1*var(--standaardMaat));
+      
+    border-radius: 50% 50%;
+    background-color: black;
+  }  
+    
+  .rwUranusBody {
+      position: relative;
+      top: calc(3.7*var(--standaardMaat));
+      left: calc(1*var(--standaardMaat));
+      
+      height: calc(5*var(--standaardMaat));
+      width: calc(8*var(--standaardMaat));
+        
+      border-radius: 0  calc(3*var(--standaardMaat)) 0 0;
+      background-color: var(--uranus-color);
+      box-shadow: inset calc(-.5*var(--standaardMaat)) 0 rgba(19, 22, 20, 0.6);
+
+    }
+
+    .ijsdruppel {
+      position: relative;
+      top: calc(-8.4*var(--standaardMaat));
+      left: calc(1.2*var(--standaardMaat));
+      border-radius: 0 calc(3*var(--standaardMaat));
+      height: calc(.8*var(--standaardMaat));
+      width: calc(.1*var(--standaardMaat));
+      background-color: lightblue;
+    }
+    
+  @keyframes kruipen{
+    100% {
+        transform: translatex(calc(-10*var(--standaardMaat)));
+      }
+    }
+
+    .scannen {
+      animation: scannenVertikaal 5s linear infinite;
+    }
+    
+    .lijn {
+      position: relative;
+      left: calc(-1*var(--standaardMaat));
+      width: calc(100*var(--standaardMaat));
+      height: calc(.1*var(--standaardMaat));
+     
+      border-radius: calc(.5*var(--standaardMaat));
+      background-color:#afff14;
+      box-shadow: 
+        0 0 calc(.75*var(--standaardMaat)) calc(.1*var(--standaardMaat)) #39ff14,
+        0 0 calc(.5*var(--standaardMaat)) calc(.05*var(--standaardMaat)) #39ff14,
+        /* 0 0 calc(.25*var(--standaardMaat)) calc(.025*var(--standaardMaat)) #39ff14, */
+        0 0 calc(10*var(--standaardMaat)) 0 #39ff14;
+      transform-origin: left;
+    }
+    
+    @keyframes scannenVertikaal {
+      0% {
+        transform: translatey(calc(-5*var(--standaardMaat)));
+      }
+      50% {
+        transform: translatey(calc(14*var(--standaardMaat)));
+      }
+      100%{
+        transform: translatey(calc(-5*var(--standaardMaat)));
+      }
+    }
+    
+    .punt {
+      position:relative;
+      top: -.25em;
+     
+      width: calc(.3*var(--standaardMaat));
+      height: calc(.3*var(--standaardMaat));
+      background-color:#afff14;
+      border-radius: 50%;
+      box-shadow: 
+        0 0 calc(.05*var(--standaardMaat)) calc(.01*var(--standaardMaat)) #afff14,
+        0 0 calc(.1*var(--standaardMaat)) calc(.02*var(--standaardMaat)) #eaff14,
+        0 0 calc(.2*var(--standaardMaat)) calc(.03*var(--standaardMaat)) #eaff14;
+      
+      animation: scannenHorizontaal 2s linear infinite;
+    }
+    
+    @keyframes scannenHorizontaal {
+      50% {
+        transform: translatex(calc(25*var(--standaardMaat)));
+      }
+      
+    }
+
+    ul.aliens > li.aarde > article {
+      --scanKleur: var(--zon-color);
+    }
+
+    /* background punt #afff14
+    boxschadow #eaff14
+
+    lijn background: #afff14
+    lijn box #39ff14 */
