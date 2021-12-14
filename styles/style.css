@@ -252,11 +252,13 @@ div[class$="planeet"] > label{
   
   border-radius: 50%;
   transform-style: preserve-3d;
-  transform: rotatey(180deg); 
+  transform: rotatey(180deg) translatez(calc(.02*var(--standaardMaat))); 
   box-shadow: none;
+ 
 }
 /*** labels planeten stylen ***/
 div[class$="planeet"] > label:hover {
+
   box-shadow: 0 0 calc(1*var(--standaardMaat)) calc(.5*var(--standaardMaat)) var(--zon-color);
 }
 
