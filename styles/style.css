@@ -69,7 +69,7 @@ radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0,128,0, .5) 
 --labels-color-focus: whitesmoke;
 --labels-licht: goldenrod;
 
-/* text */
+/*** text ***/
 --text-color-labels: grey;
 --text-color-labels-checked: white;
 --text-color-label-hover: black;
@@ -94,24 +94,8 @@ body {
   background-position: 
     calc(100*var(--standaardMaat)) calc(5*var(--standaardMaat)),
     calc(20*var(--standaardMaat)) calc(50*var(--standaardMaat));
-    /* calc(250*var(--standaardMaat)) calc(100*var(--standaardMaat)); */
-  /* animation: sterren 250s alternate-reverse infinite; */
 }
-@keyframes sterren {
-  0%, 100% {
-    background-size: 
-    calc(2.5*var(--standaardMaat)) calc(2.5*var(--standaardMaat)),
-    calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat));
-    /* calc(10*var(--standaardMaat)) calc(10*var(--standaardMaat)); */
-   }
 
-  50% {
-    background-size: 
-    calc(5*var(--standaardMaat)) calc(5*var(--standaardMaat)),
-    calc(10*var(--standaardMaat)) calc(10*var(--standaardMaat));
-    /* calc(10*var(--standaardMaat)) calc(10*var(--standaardMaat)); */
-  }
-}
 header{
   font-size: calc(1.15* var(--standaardMaat)); 
   text-align: left;
@@ -124,9 +108,7 @@ h1 {
 
   font-family:'Audiowide', cursive;
   letter-spacing: calc(.1*var(--standaardMaat));
-
   color: var(--font-color);
-    /* text-shadow: 0 0 calc(.25*var(--standaardMaat)) grey; */
 }
 
 h2 {
@@ -160,8 +142,10 @@ footer {
 }
 time {
   position: relative;
-  top: calc(-.5*var(--standaardMaat));
-  padding: calc(.5*var(--standaardMaat)) 0;
+  display:block;
+  transform-origin: center center;
+  top: calc(-1*var(--standaardMaat));
+  margin: calc(.5*var(--standaardMaat)) 0;
 }
 abbr {
   text-decoration: none;
@@ -221,7 +205,7 @@ ul.zonnestelsel {
   transform-style: preserve-3d;   
 }
 
-/*cirkel voor pad-orbit om zon*/
+/*** cirkel voor pad-orbit om zon ***/
 .planeet {
   position: absolute;
     
@@ -243,7 +227,7 @@ ul.zonnestelsel {
   animation: draaien calc(var(--orbit-time) * var(--tempo)) linear infinite;
 }
 
-/* labels planeten rechtzetten */
+/*** labels planeten rechtzetten ***/
 div[class$="planeet"] > label{
   margin: 0;
   padding: 0;
@@ -256,13 +240,13 @@ div[class$="planeet"] > label{
   box-shadow: none;
  
 }
-/*** labels planeten stylen ***/
-div[class$="planeet"] > label:hover {
 
+/*** labels planeten hover ***/
+div[class$="planeet"] > label:hover {
   box-shadow: 0 0 calc(1*var(--standaardMaat)) calc(.5*var(--standaardMaat)) var(--zon-color);
 }
 
-/* planeten bovenkant boven houden en schaduw*/
+/*** planeten bovenkant boven houden en schaduw ***/
 div[class$="planeet"]{
   position:absolute;
   display: block;
@@ -276,13 +260,12 @@ div[class$="planeet"]{
   background-size: 500% 500%, auto auto;
   background-position:center, center;
 }
-
 .mercurius {
     --maat:calc(9.5*var(--standaardMaat));
     --orbit-time:3s;
 }
 
-/* bolletje voor planeet*/
+/*** bolletje voor planeet ***/
 .mercurius__planeet, div.mercurius__planeet > label {
     --planeetNaam:"Mercurius";
     --hoogte:calc(.5*var(--standaardMaat));
@@ -291,12 +274,10 @@ div[class$="planeet"]{
     width:var(--hoogte);
     background:var(--schaduw-gradient), var(--mercurius-planeet);
 }
-
 .venus {
     --maat:calc(12.5*var(--standaardMaat));
     --orbit-time:3s;
 }
-
 .venus__planeet, div.venus__planeet > label {
     --planeetNaam:"Venus";
     --hoogte: var(--standaardMaat);
@@ -304,12 +285,10 @@ div[class$="planeet"]{
     width: var(--hoogte);
     background: var(--schaduw-gradient), var(--venus-planeet);
 }
-
 .aarde {
     --maat:calc(15.5*var(--standaardMaat));
     --orbit-time:10s;
 }
-
 .aarde__planeet, div.aarde__planeet > label {
     --planeetNaam:"Aarde";
     --hoogte: var(--standaardMaat);
@@ -317,12 +296,10 @@ div[class$="planeet"]{
     width: var(--hoogte);
     background: var(--schaduw-gradient), var(--aarde-planeet);
 }
-
 .mars {
     --maat:calc(17.5*var(--standaardMaat));
     --orbit-time:1s;
 }
-
 .mars__planeet, div.mars__planeet > label {
     --planeetNaam:"Mars";
     --hoogte: calc(.5*var(--standaardMaat));
@@ -330,12 +307,10 @@ div[class$="planeet"]{
     width: var(--hoogte);
     background: var(--schaduw-gradient), var(--mars-planeet);
 }
-
 .jupiter {
     --maat:calc(23.5*var(--standaardMaat));
     --orbit-time:30s;
 }
-
 .jupiter__planeet, div.jupiter__planeet > label {
     --planeetNaam:"Jupiter";
     --hoogte: calc(2.5*var(--standaardMaat));
@@ -343,12 +318,10 @@ div[class$="planeet"]{
     width:var(--hoogte);
     background: var(--schaduw-gradient), var(--jupiter-planeet);
 }
-
 .saturnus {
     --maat:calc(29.5*var(--standaardMaat));
     --orbit-time:50s;
 }
-
 .saturnus__planeet, div.saturnus__planeet > label {
     --planeetNaam:"Saturnus";
     --hoogte: calc(2.5*var(--standaardMaat));
@@ -356,12 +329,10 @@ div[class$="planeet"]{
     height:var(--hoogte);
     background: var(--schaduw-gradient), var(--saturnus-planeet);    
 }
-
 .uranus {
     --maat:calc(33.5*var(--standaardMaat));
     --orbit-time:90s;
 }
-
 .uranus__planeet, div.uranus__planeet > label{
     --planeetNaam:"Uranus";
     --hoogte: calc(1.5*var(--standaardMaat));
@@ -369,12 +340,10 @@ div[class$="planeet"]{
     height: var(--hoogte);
     background: var(--schaduw-gradient), var(--uranus-planeet);
 }
-
 .neptunus {
     --maat:calc(37.5*var(--standaardMaat));
     --orbit-time:9s;
 }
-
 .neptunus__planeet, div.neptunus__planeet > label {
     --planeetNaam:"Neptunus";
     --hoogte: calc(1.5*var(--standaardMaat));
@@ -498,6 +467,7 @@ label {
     background-color: var(--labels-color);     
     box-shadow: calc(.1*var(--standaardMaat)) calc(.1*var(--standaardMaat)) var(--label-shadow);
   }
+  /*** FOCUS ***/
 input[type="radio"]:focus + label {
     color: var(--labels-color-focus);
   }
@@ -529,11 +499,12 @@ input[id="mercurius"]:focus + label {
     background-color: var(--neptunus-color);
   }
   
+  /*** HOVER ***/
   input[type="radio"]:hover + label{
     background-color: var(--labels-color);
     box-shadow: 0 0;
   }
-input[id="zonnestelsel1"]:hover + label {
+  input[id="zonnestelsel1"]:hover + label {
     color: var(--zon-color);
   }
   input[id="mercurius"]:hover + label {
@@ -561,6 +532,8 @@ input[id="zonnestelsel1"]:hover + label {
     color: var(--neptunus-color);
   }
 
+
+  /*** CHECKED ***/
   input[type="radio"]:checked + label{
     background-color: var(--labels-color);
     box-shadow: 
@@ -616,7 +589,6 @@ ul.aliens {
     inset 0 0 calc(.5*var(--standaardMaat)) calc(.05*var(--standaardMaat)) var(--footer-glow); */
 
 }
-
 ul.aliens li {
     height: calc(25 * var(--standaardMaat));
     min-width: calc(20 * var(--standaardMaat));
@@ -632,49 +604,43 @@ ul.aliens li {
 
     border-left: calc(.15*var(--standaardMaat)) dotted var(--encyclopedie-background);
 }
-
 ul.aliens p {
   font-size: calc(1*var(--standaardMaat));
   color: var(--text-color-labels);
   font-weight: 500;
 }
-
 ul.aliens article {
   height: calc(15 * var(--standaardMaat));
 }
 section.beschrijving {
   flex-grow: 1;
 }
+.beschrijving {
+  background-color: var(--header-footer-background);
+}
 
 ul.mercurius li:not(.mercurius) {
     display:none;
   }
-  
-  ul.venus li:not(.venus) {
+ul.venus li:not(.venus) {
     display:none;
   }
-  
-  ul.aarde li:not(.aarde) {
+ul.aarde li:not(.aarde) {
     display:none;
   }
-  
-  ul.mars li:not(.mars) {
+ul.mars li:not(.mars) {
     display:none;
   }
-  
-  ul.jupiter li:not(.jupiter) {
+ul.jupiter li:not(.jupiter) {
     display:none;
   }
-  
-  ul.saturnus li:not(.saturnus) {
+ul.saturnus li:not(.saturnus) {
     display:none;
   }
-  
-  ul.uranus li:not(.uranus) {
+ul.uranus li:not(.uranus) {
     display:none;
   }
-  
-  ul.neptunus li:not(.neptunus) {
+ul.neptunus li:not(.neptunus) {
     display:none;
   }
 
@@ -719,9 +685,7 @@ ul.aliens li.neptunus {
   background-repeat: round;
 }
 
-.beschrijving {
-  background-color: var(--header-footer-background);
-}
+
 /**********************************************
 Ruimtewezen 1
 ***********************************************/
@@ -922,9 +886,6 @@ article.ruimteschip:hover .koepel {
    }
 
    @keyframes opendicht{
-    /* 0% {
-      transform: rotatez(0deg);
-    } */
     100%{ 
       transform: rotatez(-90deg);
     }
@@ -1199,6 +1160,7 @@ li.mars:hover article.rik{
       
       background-color: orangered;
     }
+
     .body {
       position: relative;
       top: calc(.75*var(--standaardMaat));
@@ -1291,8 +1253,6 @@ li.mars:hover article.rik{
         filter: blur(1.25em) opacity(20%);
       }
     }
-
-    /* (calc(1.25*var(--standaardMaat))) */
     @keyframes trillen {
       0%, 12%, 16%, 20%, 24%, 90%, 94%, 98%, 100%{
         transform: translatex(0);
@@ -1304,7 +1264,6 @@ li.mars:hover article.rik{
         transform: translatex(calc(-.25*var(--standaardMaat)));
       }
     }
-
     @keyframes disappear {
        100% {
         filter:opacity(25%);
@@ -1413,7 +1372,7 @@ li.mars:hover article.rik{
 
     }
 
-    .ijsdruppel {
+  .ijsdruppel {
       position: relative;
       top: calc(-8.4*var(--standaardMaat));
       left: calc(1.2*var(--standaardMaat));
@@ -1429,11 +1388,12 @@ li.mars:hover article.rik{
       }
     }
 
-    .scannen {
+  /*** SCANNEN VOOR RUITMEWEZENS ***/
+  .scannen {
       animation: scannenVertikaal 5s linear infinite;
     }
     
-    .lijn {
+  .lijn {
       position: relative;
       left: calc(-1*var(--standaardMaat));
       width: calc(100*var(--standaardMaat));
@@ -1449,7 +1409,7 @@ li.mars:hover article.rik{
       transform-origin: left;
     }
     
-    @keyframes scannenVertikaal {
+  @keyframes scannenVertikaal {
       0% {
         transform: translatey(calc(-5*var(--standaardMaat)));
       }
@@ -1461,7 +1421,7 @@ li.mars:hover article.rik{
       }
     }
     
-    .punt {
+  .punt {
       position:relative;
       top: -.25em;
      
@@ -1477,19 +1437,12 @@ li.mars:hover article.rik{
       animation: scannenHorizontaal 2s linear infinite;
     }
     
-    @keyframes scannenHorizontaal {
+  @keyframes scannenHorizontaal {
       50% {
         transform: translatex(calc(25*var(--standaardMaat)));
       }
       
     }
 
-    ul.aliens > li.aarde > article {
-      --scanKleur: var(--zon-color);
-    }
 
-    /* background punt #afff14
-    boxschadow #eaff14
-
-    lijn background: #afff14
-    lijn box #39ff14 */
+   
