@@ -1446,4 +1446,48 @@ li.mars:hover article.rik{
     }
 
 
-   
+    .quarantaineRing1 {
+      position: relative;
+      display: block;
+      top: calc(5*var(--standaardMaat));
+      width: calc(3.5*var(--standaardMaat));
+      height: calc(3.5*var(--standaardMaat));
+      border-radius: 50%;
+      border: calc(.5*var(--standaardMaat)) solid #39ff14;
+      border-color: #39ff14 transparent #39ff14 transparent;
+      animation: ring1 1s linear infinite;
+      
+    }
+    
+    @keyframes ring1 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .quarantaineRing2 {
+      position: relative;
+      top: calc(.5*var(--standaardMaat));
+      left: calc(.5*var(--standaardMaat));
+      display: block;
+      
+      width: calc(1.5*var(--standaardMaat));
+      height: calc(1.5*var(--standaardMaat));
+      border-radius: 50%;
+      border: calc(.5*var(--standaardMaat)) solid #39ff14;
+      border-color: #39ff14 transparent #39ff14 transparent;
+      animation: ring1 2s linear infinite;
+     
+    }
+    
+    @keyframes ring2 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
