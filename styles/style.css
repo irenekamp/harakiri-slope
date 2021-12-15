@@ -376,10 +376,10 @@ div[class$="planeet"]{
 
 @keyframes oporbit {
     0% {
-    transform: translatey(calc(var(--hoogte)/-2)) rotatex(-90deg) rotatey(0deg); 
+    transform: translatey(calc(1*var(--hoogte)/-2)) rotatex(-90deg) rotatey(0deg); 
     }
     100% {
-    transform: translatey(calc(var(--hoogte)/-2)) rotatex(-90deg) rotatey(-365deg); 
+    transform: translatey(calc(1*var(--hoogte)/-2)) rotatex(-90deg) rotatey(-365deg); 
     }
 }
 
@@ -573,7 +573,6 @@ input[id="mercurius"]:focus + label {
 ul.aliens {
     list-style: none;  
     display: flex;
-    gap: calc(1*var(--standaardMaat));
     align-items: center;
     flex-direction: row;
     overflow: auto;
@@ -608,9 +607,11 @@ ul.aliens p {
   font-size: calc(1*var(--standaardMaat));
   color: var(--text-color-labels);
   font-weight: 500;
+  flex-grow: 1;
 }
 ul.aliens article {
   height: calc(15 * var(--standaardMaat));
+  flex-grow: 1;
 }
 section.beschrijving {
   flex-grow: 1;
